@@ -1,0 +1,71 @@
+<!DOCTYPE HTML>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>Ejercicio 3</title>
+    <meta name="autor" content="1 ciclo superior">
+    <meta name="description" content="">
+    <link rel="stylesheet" href="/css/estils.css">
+
+</head>
+
+<body>
+    <header class="encabezado">
+        <h4><strong>FORMULARIO DE:</strong></h4>
+        <h1>PRODUCTOS</h1>
+        <h5>Para los que buscan mejorar sus ventas</h5>
+    </header>
+    <main class="centro">
+        <form class="form1" action="#" method="post" autocomplete="on" enctype="multipart/form-data">
+            <h2>Datos basicos</h2>
+            <label>Escribe tu nombre:</label>
+            <input type="text" name="nombre" value="" placeholder="Nombre Completo" required>
+            <label>Usuario:</label>
+            <input type="email" name="usuario" value="" placeholder="email" required>
+            <label>Contraseña:</label>
+            <input type="password" name="password" required>
+            <label for="file">Foto</label>
+            <input type="file" name="foto">
+            <input type="submit" value="Elegir">
+            <label></label>
+            <input type="checkbox" name="ampa" value="ampa" checked>Añadir contador de visitas<br>
+        </form>
+
+        <form class="form2" action="#" method="post" autocomplete="on">
+            <h2>Datos economicos:</h2>
+            <div class="container">
+                <div class="caja">
+                    <label>Precio:</label>
+                    <input type="number" min="0" max="100000" step="100">
+                </div>
+                <div class="caja">
+                    <label for="impuestos">Impuestos:</label>
+                    <input list="impuestos" size="3">
+                    <datalist id="impuestos">
+                        <option value="4%"></option>
+                        <option value="7%"></option>
+                        <option value="16%"></option>
+                        <option value="25%"></option>
+                    </datalist>
+
+                </div>
+            </div>
+            <label>Descripción:</label>
+            <textarea rows="4" placeholder="Descripción"></textarea>
+            <div id="promocion">
+                <label>Promocion:</label>
+                <label></label><input type="radio" name="promocion" value="ninguno" checked>Ninguno
+                <label></label><input type="radio" name="promocion" value="transporte gratuito">Transporte Gratuito
+                <label></label><input type="radio" name="promocion" value="descuento">Descuento 5%
+            </div>
+        </form>
+
+    </main>
+    <footer id="peu">
+        <img src="img/logo.png" alt="logotipo">
+        <p>UAE . { DESCUBRIENDO FRONTERAS}</p>
+        <a href="www.uae.es"> WWW.UAE.ES</a>
+
+    </footer>
+</body>
